@@ -1,0 +1,116 @@
+<!DOCTYPE html> <!-- Declaring the document type and version of HTML (HTML5) -->
+<html lang="en"> <!-- Starting the HTML document with the language set to English -->
+<head>
+    <meta charset="UTF-8"> <!-- Declares the character encoding for the webpage as UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets the viewport for responsive web design -->
+    <title>Kanak Kitchen</title> <!-- Specifies the title of the webpage which appears in the browser tab -->
+    <!-- Adds a link to the external CSS file for styling -->
+    <link rel="stylesheet" href="./kanak_websiteFinal.css">
+    <!-- Adds a link to the external JavaScript file for functionality -->
+    <script src="./kanak_website.js"></script>
+    <style> 
+        /* Hides the media controls on the audio element to customize it further */
+        audio::-webkit-media-controls {
+            display: none;
+        }
+    </style>
+</head>
+<body> <!-- Starts the body of the webpage -->
+    <header> <!-- Creates the header section for the webpage -->
+        <div class="main"> <!-- Main content container, for centering or setting styles -->
+            <div class="logo"> <!-- Logo container for the restaurant -->
+                <img src="./Kanak Kitchen logo.png" alt="kanak kitchen logo"> <!-- Displays the logo image for the restaurant -->
+            </div>
+            <ul> <!-- Unordered list used for navigation items -->
+                <nav> <!-- Navigation menu for the website -->
+                    <!-- Links to different pages in the website -->
+                    <li><h3><a href="C:/Users/kahil/UAT/CSC104/Final%20Project/Website/final%20project%20files/menu.html">Home</a></h3></li>
+                    <li><h3><a href="C:/Users/kahil/UAT/CSC104/Final%20Project/Website/final%20project%20files/menu.html">Menu</a></h3></li>
+                    <li><h3><a href="C:/Users/kahil/UAT/CSC104/Final%20Project/Website/final%20project%20files/ohanaMeet.html">Meet the Ohana</a></h3></li>
+                    <li><h3><a href="C:/Users/kahil/UAT/CSC104/Final%20Project/Website/final%20project%20files/checkout.html">Checkout</a></h3></li>
+                    <li><h3><a href="#">Contact Us</a></h3>
+                        <!-- Sub-menu for Contact Us section -->
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="C:/Users/kahil/UAT/CSC104/Final%20Project/Website/final%20project%20files/messageUs.html">Message Us</a></li>
+                                <li><a href="#"><i class="fa fa-caret-down"></i> Business Info</a></li>
+                                <li><a href="#"><i class="fa fa-caret-down"></i> Socials</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><h3><a href="#">More</a></h3>
+                        <!-- Sub-menu for More section -->
+                        <div class="sub-menu">
+                            <ul>
+                                <li><a href="#">Reviews</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </nav> <!-- End of the navigation section -->
+            </ul> <!-- End of the navigation list -->
+        </div> <!-- End of the main container -->
+        <div class="title"> <!-- Title container for the restaurant name -->
+            <h1>K a n a k &nbsp;&nbsp;K i t c h e n</h1>  <!-- Restaurant name header -->
+            
+            <div class="button1"></div>
+            <!-- Button for placing an order, links to the checkout page -->
+            <a href="C:/Users/kahil/UAT/CSC104/Final%20Project/Website/final%20project%20files/checkout.html" class="btn">Place Order</a>
+            <!-- Button for exploring the gallery, links to the gallery page -->
+            <a href="C:/Users/kahil/UAT/CSC104/Final%20Project/Website/final%20project%20files/gallery.html" class="btn">Explore Gallery</a>
+            
+            <br><br>
+            <!-- Slideshow container for displaying images of menu items -->
+            <div class="slideshow-container">
+                <!-- Each slide contains an image and a caption -->
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>  
+                    <img id="fish" src="./sashimi salad.jpeg" alt="raw fish plate">
+                    <div class="text">Sashimi Salad</div> <!-- Caption for the image -->
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img id="pork" src="./Kalbi ribs.jpg" alt="pork plate">
+                    <div class="text">Kalbi short-ribs</div> <!-- Caption for the image -->
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img id="mahi" src="./mahi mahi sandwich.jpg" alt="Mahi mahi sandwich">
+                    <div class="text">Spam Musubi</div> <!-- Caption for the image -->
+                </div>
+            </div>
+
+            <!-- Dots for slideshow navigation -->
+            <div class="dot">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span> <!-- Dots based on the number of slides -->
+            </div>
+
+            <div class="button2">
+                <!-- Button to play island music -->
+                <button id="onbtn" onclick="playOn()">Play Island Music</button>
+            </div>
+
+            <div class="music">
+                <!-- Audio player for background music -->
+                <audio controls loop>
+                    <audio id="island music" src="./music/blue-island-144122 hawaii music.mp3" type="audio/mp3"></audio>  
+                </audio>
+            </div>
+
+            <div class="hours">
+                <h3>Hours: &nbsp;Mon - Fri | 9am - 7pm&nbsp;&nbsp;/&nbsp;&nbsp;   Sat - Sun | 10am - 8pm</h3> <!-- Display business hours -->
+            </div>
+
+            <div class="aloha">
+                <!-- Animated Aloha image -->
+                <img id="aloha" src="./aloha.gif" alt="Animated Aloha logo">
+            </div>
+        </header>
+
+    </body>
+    <!-- Footer with copyright information -->
+    <footer>
+        &copy; 2025 Kanak Kitchen | &nbsp;Created by Jena Kahili | &nbsp; Final Project HTML - Assignment 4.1 | &nbsp; University of Advancing Technology | &nbsp; CSC104    
+    </footer>
+</html>
