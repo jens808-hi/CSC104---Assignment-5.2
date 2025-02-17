@@ -1,0 +1,228 @@
+/* Universal selector that removes margin and padding from all elements */
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Century;
+}
+
+* {box-sizing:border-box} /* Ensures that padding and borders are included in the element's total width and height */
+
+/* Slideshow container */
+.slideshow-container {
+    top: 100%; /* Positions the slideshow container */
+    left: 55%; /* Adjusts horizontal position */
+    transform: translate(-50%, -50%); /* Centers the slideshow */
+    width: 118%; /* Takes up the full width */
+    height: 90%; /* Fixed height for the slideshow */
+    position: absolute;
+    margin: auto;
+    display: flexbox;
+    margin-top: -60px;
+}
+
+/* Ensures that images within the slideshow are properly sized */
+.mySlides img {
+    width: 60%; /* Ensures image width fits within the container */
+    height: 60%; /* Ensures image height fits within the container */
+    object-fit: cover; /* Prevents distortion of the image */
+    object-position: center; /* Centers the image */
+}
+
+/* Specific styles for different images */
+#fish {
+    width: 80%; /* Stretches the image to 80% of the container */
+    height: 130%; /* Stretches the image vertically */
+    object-position: center; /* Centers the image */
+    border: #5f4ef7; /* Border color for the image */
+    border-radius: 10px; /* Rounded corners */
+    border-style: groove; /* Border style */
+}
+
+#pork {
+    width: 80%;
+    height: 70%;
+    object-position: center;
+    border: #d42beb;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+#mahi {
+    width: 80%;
+    height: 60%;
+    object-position: center;
+    border: #44dbe0;
+    border-radius: 10px;
+    border-style: groove;
+}
+
+/* Caption text for slideshow images */
+.text {
+    color: hsl(56, 86%, 62%);
+    font-size: 15px;
+    padding: 8px 12px;
+    position: relative;
+    bottom: 8px;
+    width: 100%;
+    text-align: left;
+    font-family: cursive;
+    font-size: xx-large;
+    font-weight: 200;
+}
+
+/* Number text indicating slide number */
+.numbertext {
+    color: hsl(56, 86%, 62%);
+    font-size: 16px;
+    padding: 8px 12px;
+    position: relative;
+    right: -80%;
+    width: 20%;
+}
+
+/* Dot navigation for slideshow */
+.dot{
+    cursor: pointer;
+    height: 8px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    text-align: center;
+}
+
+/* When the dot is active or hovered */
+.active, .dot:hover {
+    background-color: #bb0c0c;
+}
+
+/* Container for dots */
+.dot {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+/* Fading effect for slides */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* Keyframes for fading effect */
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+/* Make the text size smaller on very small screens */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+/* Next button positioning */
+.next {
+    right: 10;
+    border-radius: 3px 0 0 3px;
+}
+
+/* Hover effect on next/prev buttons */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+/* Header background and styling */
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./hawaii beach 2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    min-height: 150px;
+}
+
+/* Navigation list styling */
+ul {
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    min-height: 400px;
+    margin-right: 40px;
+    font-size: 17px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+}
+
+/* Hover effect for navigation items */
+ul li a:hover {
+    color: rgb(205, 248, 176);
+    background-color: transparent;
+}
+
+ul li.active a {
+    color: rgb(241, 120, 239);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Styling for the logo */
+.logo img {
+    position: absolute;
+    top: 14%;
+    left: 12%;
+    width: 12%;
+    height: auto;
+    opacity: 0.7;
+}
+
+/* Music section styling */
+#music {
+    position: absolute;
+    bottom: 10%;
+    text-align: left;
+    border-color: #4b1b99;
+    border-radius: 5px;
+    left: 20%;
+}
+
+/* Aloha gif animation styling */
+#aloha {
+    position: absolute;
+    height: 10%;
+    width: 110px;
+    right: 119%;
+    bottom: -31%;
+    opacity: 0.8;
+}
+
+/* Main container */
+.main {
+    max-width: 1250px;
+    margin: auto;
+}
